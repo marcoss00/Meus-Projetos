@@ -5,13 +5,13 @@ GLfloat fAspect;
 double rotate_y=0; 
 double rotate_x=0;
 
-// FunÁ„o callback chamada para fazer o desenho
+// Fun√ß√£o callback chamada para fazer o desenho
 void Desenha(void)
 {
 	//  Limpa a tela e o Z-Buffer
   glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	
-	// Rotaciona quando o usu·rio muda rotate_x e rotate_y
+	// Rotaciona quando o usu√°rio muda rotate_x e rotate_y
  	glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
 	
@@ -35,15 +35,15 @@ void Desenha(void)
  }
  
 
-// FunÁ„o usada para especificar o volume de visualizaÁ„o
+// Fun√ß√£o usada para especificar o volume de visualiza√ß√£o
 void EspecificaParametrosVisualizacao(void)
 {
-	// Especifica sistema de coordenadas de projeÁ„o
+	// Especifica sistema de coordenadas de proje√ß√£o
 	glMatrixMode(GL_PROJECTION);
-	// Inicializa sistema de coordenadas de projeÁ„o
+	// Inicializa sistema de coordenadas de proje√ß√£o
 	glLoadIdentity();
 
-	// Especifica a projeÁ„o perspectiva
+	// Especifica a proje√ß√£o perspectiva
 	gluPerspective(45,fAspect,0.1,500);
 
 	// Especifica sistema de coordenadas do modelo
@@ -51,20 +51,20 @@ void EspecificaParametrosVisualizacao(void)
 	// Inicializa sistema de coordenadas do modelo
 	glLoadIdentity();
 
-	// Especifica posiÁ„o do observador e do alvo
+	// Especifica posi√ß√£o do observador e do alvo
 	gluLookAt(0,80,200, 0,0,0, 0,1,0);
 }
 
-// FunÁ„o callback chamada quando o tamanho da janela È alterado 
+// Fun√ß√£o callback chamada quando o tamanho da janela √© alterado 
 void AlteraTamanhoJanela(GLsizei w, GLsizei h)
 {
-	// Para previnir uma divis„o por zero
+	// Para previnir uma divis√£o por zero
 	if ( h == 0 ) h = 1;
 
 	// Especifica o tamanho da viewport
 	glViewport(0, 0, w, h);
  
-	// Calcula a correÁ„o de aspecto
+	// Calcula a corre√ß√£o de aspecto
 	fAspect = (GLfloat)w/(GLfloat)h;
 
 	EspecificaParametrosVisualizacao();
@@ -75,11 +75,11 @@ void specialKeys( int key, int x, int y ) {
   rotate_y=0; 
   rotate_x=0;
  
-  //  Seta direita - aumenta rotaÁ„o em 5 graus
+  //  Seta direita - aumenta rota√ß√£o em 5 graus
   if (key == GLUT_KEY_RIGHT)
     rotate_y += 5;
  
-  //  Seta para esquerda - diminui a rotaÁ„o por 5 graus
+  //  Seta para esquerda - diminui a rota√ß√£o por 5 graus
   else if (key == GLUT_KEY_LEFT)
     rotate_y -= 5;
  
@@ -89,7 +89,7 @@ void specialKeys( int key, int x, int y ) {
   else if (key == GLUT_KEY_DOWN)
     rotate_x -= 5;
  
-  //  Requisitar atualizaÁ„o do display
+  //  Requisitar atualiza√ß√£o do display
   glutPostRedisplay();
  
 }
@@ -98,7 +98,7 @@ void specialKeys( int key, int x, int y ) {
 
 int main(int argc, char* argv[]){
  
-  //  Inicializa o GLUT e processa os par‚metros do usu·rio GLUT
+  //  Inicializa o GLUT e processa os par√¢metros do usu√°rio GLUT
     glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(350,300);
