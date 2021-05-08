@@ -11,3 +11,4 @@ Resgate: Programa feito no Scratch. Uma heroína tem que salvar uma criança que
 
 Planta: Programa feito no Scratch. É perguntado para o usuário qual o melhor ângulo para a distribuição das folhas de uma planta, depois de inserir o programa mostra uma planta distribuindo as suas folhas de acordo com o ângulo inserido. Muito bom para ensinar biologia, pois mostra a distribuição de folhas em uma planta de forma bem realista e leva em consideração a sequência de Fibonacci e o ângulo de ouro.
 
+Jogo Nave: Programa feito no Scratch. Jogo clássico de nave, onde ela tem que atirar para destruir outras naves. Possui elementos randômicos, sistema de pontos, sensação do cenário se mover e interação com o usuário.
