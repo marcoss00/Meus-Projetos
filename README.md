@@ -1,2 +1,2 @@
 # Meus-Projetos
-Programas simples em diferentes linguagens.
+Programas simples feitos em diferentes linguagens.
