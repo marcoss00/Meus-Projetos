@@ -10,4 +10,8 @@ main_objeto3d: Codigo feito em C++ com a biblioteca OpenGL. É gerado um cubo e 
 
 mainReta: Codigo feito em C++ com a biblioteca OpenGL. É plotado um plano cartesiano e o usuário insere as coordenadas de dois ponto, depois da inserção dos pontos, é gerado uma reta entre eles.
 
-genius: odigo feito em C++. Jogo em que aparece uma sequencia de cores e depois o usuário deve acertar a sequencia mostrada previamente.
+genius: Codigo feito em C++. Jogo em que aparece uma sequencia de cores e depois o usuário deve acertar a sequencia mostrada previamente.
+
+planoCartesiano: Codigo feito em C++ com a biblioteca OpenGL. É perguntado ao usuário as coordenadas (X e Y) de dois pontos em seguida é plotado uma reta entre esses dois pontos no plano cartesiano.
+
+Controle remoto: Codigo feito em C++. Simula as funcionalidades de um controle remoto de televisão.
